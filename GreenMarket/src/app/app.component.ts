@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'GreenMarket';
+  test() {
+    console.log('hello world!');
+  }
 }
