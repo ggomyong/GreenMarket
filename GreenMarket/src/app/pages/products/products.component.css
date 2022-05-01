@@ -1,21 +1,8 @@
-.product-icon{
-    width: 150px;
-    height: 150px;
+#header {
+    color:darkgreen;
+    background-color: rgb(217, 241, 217);
 }
 
-.card-content{
-    display: flex;
-    justify-content: center;
-}
-
-.card-action {
-    text-align: right;
-}
-
-.input-quantity {
-    width: 150px;
-}
-
-.product-mat-card {
-    width: 88%;
+#logo{
+    text-align: left;
 }
