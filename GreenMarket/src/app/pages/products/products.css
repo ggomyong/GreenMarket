@@ -1,0 +1,21 @@
+.product-icon{
+    width: 150px;
+    height: 150px;
+}
+
+.card-content{
+    display: flex;
+    justify-content: center;
+}
+
+.card-action {
+    text-align: right;
+}
+
+.input-quantity {
+    width: 150px;
+}
+
+.product-mat-card {
+    width: 88%;
+}

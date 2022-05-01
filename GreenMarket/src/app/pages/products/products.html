@@ -1,0 +1,23 @@
+<mat-grid-list [cols]="breakpoint" (window:resize)="onResize()" ng>
+    <mat-grid-tile *ngFor="let product of products">
+        <mat-card class="product-mat-card">
+            <mat-card-header>
+                <mat-card-title>
+                    {{product.name}}
+                </mat-card-title>
+                <mat-card-subtitle>
+                    {{product.price | currency}}
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="card-content">
+                <mat-icon class="product-icon" svgIcon="{{product.icon}}" color="{{product.color}}"></mat-icon>
+            </mat-card-content>
+            <mat-card-actions class="card-action">
+                <mat-form-field class="input-quantity">
+                    <input matInput type="number" min="0" max="100" autocomplete="off" [(ngModel)]="product.quantity"/>
+                </mat-form-field>
+                <button mat-button mat-raised-button color="primary" (click)="purchase()">Purchase</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
